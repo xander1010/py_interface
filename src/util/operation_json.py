@@ -17,7 +17,7 @@ class OperationJson():
             return data
 
     # 根据关键字获取数据
-    def get_data(self,id):
+    def get_data(self,id=None):
         return self.data[id]
 
 if __name__ == '__main__':
