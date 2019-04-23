@@ -1,5 +1,25 @@
 {
     "login":{"username":"jiazhuang","password":"12345678"},
     "loginout":{"username":"jiazhuang","password":"12345678"},
-    "addcart":{"username":"jiazhuang","password":"12345678"}
-}
+    "addcart":{"username":"jiazhuang","password":"12345678"},
+
+    "search":{
+		  "cid":"lianfeng",
+		  "adultNumber":"1",
+		  "itineraries":[{
+		    "departureCode":"YTO",
+		    "arrivalCode":"NYC",
+		    "departureDate":"20190625"
+		  	}]
+		},
+
+    "search1":{
+		  "cid":"lianfeng",
+		  "adultNumber":"1",
+		  "itineraries":[{
+		    "departureCode":"YTO",
+		    "arrivalCode":"YVR",
+		    "departureDate":"20190525"
+	 		}]
+		}
+}	

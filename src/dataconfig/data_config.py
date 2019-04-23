@@ -53,6 +53,8 @@ def get_result():
 
 def get_header_value():
     header = {
-        "header":"1234",
-        "cookie":"xingwei"
+        "token":"d8f5d03665d32c572834010682c2a88c",
+        "cid":"lianfeng",
+        "Content-Type":"application/json"
     }
+    return header

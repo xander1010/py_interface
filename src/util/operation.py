@@ -31,11 +31,11 @@ class OperationExcel:
         return self.data.cell_value(row,col)
 
 if __name__ == '__main__':
-    opers = OperationExcel()
+    opers = OperationExcel('Newfile.xls',0)
     # print(opers.get_data().nrows)
 
     print(opers.get_lines())
-    print(opers.get_cell_value(1,1))
+    print(opers.get_cell_value(1,5))
     
     # 获取指定路径或文件的绝对路径
     print(os.path.abspath('interface.xlsx'))

@@ -24,4 +24,5 @@ if __name__ == '__main__':
     opjson = OperationJson()
 
     print(opjson.get_data('addcart'))
+    print(opjson.get_data('login'))
     print(type(opjson.get_data('addcart')))

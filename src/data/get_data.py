@@ -8,7 +8,7 @@ from util.operation_json import OperationJson
 
 class GetData:
     def __init__(self):
-        self.opera_excel = OperationExcel()
+        self.opera_excel = OperationExcel('Newfile.xls',0)
 
     # 获取excel行数，就是case个数
     def get_case_lines(self):
@@ -57,7 +57,7 @@ class GetData:
     # 通过获取关键字拿到data数据
     def get_data_for_json(self,row):
         opera_json = OperationJson()
-        request_data = opera_json.get_data(self.get_request_data)
+        request_data = opera_json.get_data(self.get_request_data(row))
         return request_data
 
     #获取预期结果
@@ -67,3 +67,8 @@ class GetData:
         if expect == '':
             return None
         return expect
+
+if __name__ == '__main__':
+    run = GetData()
+    print(run.get_data_for_json(1))
+    print(run.is_header(1))
